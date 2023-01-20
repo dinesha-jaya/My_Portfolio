@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title>CSS - Basics - Case 2</title>
+    <style>
+        header {
+            position: fixed;
+            height: 80px;
+            z-index: 2;
+            width: 100%;
+            top: 0;
+            background-color: white;
+            /*border: 1px solid red;*/
+        }
+
+        header > img {
+            width: 150px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+
+        header > nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        main {
+            margin-top: 80px;
+            position: relative;
+        }
+
+        main > nav {
+            position: absolute;
+            width: 220px;
+            top: 0;
+            bottom: 0;
+            background-color: blueviolet;
+        }
+
+        main > section > section:last-child > p:last-child {
+            margin-bottom: 0;
+        }
+
+        main > section {
+            margin-left: 230px;
+        }
+
+        main > nav > ul > li {
+            list-style: none;
+            padding-top: 15px;
+            cursor: pointer;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: darkgray;
+        }
+
+        main > section > section:first-child {
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section:first-child > div {
+            height: 100%;
+            width: calc(100%/3);
+            position: absolute;
+        }
+
+        main > section > section:first-child > div:nth-child(1) {
+            background: url("assets/img/monkey.gif");
+            background-size: contain;
+            left: 0;
+        }
+
+        main > section > section:first-child > div:nth-child(2) {
+            background: url("assets/img/monkey.gif");
+            background-size: contain;
+            left: calc(100%/3);
+        }
+
+        main > section > section:first-child > div:nth-child(3) {
+            background: url("assets/img/monkey.gif");
+            background-size: contain;
+            right: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<header><img alt="logo" src="assets/img/ijse.png">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem consequuntur deleniti deserunt,
+                dolore
+                dolores earum eius enim molestiae mollitia nisi quas qui quia quidem recusandae rem totam, velit
+                voluptatem.</p>
+            <p>Autem debitis possimus repellendus voluptatem. Ad blanditiis debitis hic molestiae, odit soluta
+                voluptatem.
+                Alias
+                aliquid enim est fuga fugit impedit iure labore natus perspiciatis quis similique, sit, unde voluptas
+                voluptate.</p>
+            <p>Aspernatur blanditiis commodi dicta doloribus explicabo illum maiores quam rerum tenetur voluptate? Ab,
+                aperiam
+                cupiditate delectus dolor ducimus expedita maxime molestias mollitia, quisquam recusandae repellat,
+                rerum
+                sunt
+                tempora temporibus voluptas!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at cumque delectus doloribus eius
+                fugit
+                illo numquam perferendis perspiciatis rerum, saepe sapiente vero, vitae. A ab consequatur enim facere
+                minima!</p>
+            <p>A praesentium quas sint! Ab aliquid consequuntur corporis culpa explicabo fuga fugit incidunt magni
+                minima
+                molestias nesciunt perspiciatis praesentium quisquam, sed temporibus vel, voluptatum! Facilis ipsa
+                labore
+                minus porro quam.</p>
+            <p>A adipisci aliquid animi architecto atque aut beatae, cumque cupiditate dolor incidunt ipsum laborum
+                magnam
+                molestias officiis, omnis perferendis perspiciatis provident recusandae sint sit suscipit unde ut veniam
+                voluptate voluptates.</p>
+            <p>Assumenda optio perspiciatis quisquam? Accusamus aperiam autem delectus deserunt dignissimos eius impedit
+                incidunt labore laborum libero, mollitia nulla odio quaerat reiciendis reprehenderit rerum totam
+                voluptates!
+                Aliquid ex ipsa non odio!</p>
+            <p>Fuga fugit omnis perferendis veritatis. Autem consectetur consequuntur cupiditate deserunt earum eum ipsa
+                iure, neque nostrum numquam perferendis placeat quibusdam quis repellat temporibus tenetur ut velit
+                veritatis vero voluptate voluptatibus.</p>
+            <p>Eveniet magnam minima quia sed? Amet beatae consequatur, distinctio eaque exercitationem expedita fugiat
+                ipsum molestias nihil nostrum officia omnis pariatur possimus quasi quis quos repellat rerum ut velit
+                voluptas voluptatum.</p>
+            <p>A adipisci, atque autem, cupiditate doloribus harum id illum in incidunt maiores minus mollitia qui quis
+                quo
+                rerum sed unde. A accusantium animi iure laboriosam, laborum modi rem! Aspernatur, at!</p>
+            <p>Beatae cum iste optio! Debitis dignissimos eveniet excepturi explicabo laboriosam obcaecati quidem
+                voluptates
+                voluptatibus. A accusamus aspernatur, consequatur cumque debitis deserunt dolorum harum iure laboriosam
+                magni nostrum quo sint veritatis?</p>
+            <p>Beatae corporis delectus deserunt, libero nam suscipit voluptate voluptatum? Adipisci aspernatur
+                assumenda,
+                consequatur culpa delectus deserunt dolorum eius id libero odit omnis porro quo sit sunt unde ut velit
+                vitae?</p>
+            <p>Consequuntur dolor est eveniet excepturi, possimus quod reprehenderit tempore totam! Blanditiis
+                consequuntur
+                deserunt dicta est eum eveniet expedita hic in natus nisi, numquam perspiciatis placeat rerum sequi sunt
+                vel
+                veritatis!</p>
+        </section>
+    </section>
+</main>
+<footer>
+    Developed by Dinesha
+</footer>
+
+</body>
+</html>
